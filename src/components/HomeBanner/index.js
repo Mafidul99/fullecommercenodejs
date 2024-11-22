@@ -8,11 +8,13 @@ import Slider from "react-slick";
 const HomeBanner =()=>{
 
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay:true
       };
 
     return(
@@ -20,19 +22,19 @@ const HomeBanner =()=>{
             <div className="homeBannerSection">
                 <Slider {...settings}>
                     <div className="item">
-                        <img src="https://cdn.shopclues.com/images/banners/2024/Nov/21/Health_Sport_web_20Nov2024.jpg" className="w-100" alt="slider1"/>
+                        <img src="https://cmsimages.shoppersstop.com/Lancome_Carousel_2_Web_d99f9644cc/Lancome_Carousel_2_Web_d99f9644cc.jpg" className="w-100" alt="slider1"/>
                     </div>
                     <div className="item">
-                        <img src="https://cdn.shopclues.com/images/banners/2024/Nov/07/television-web-hb-07Nov24.jpg" className="w-100" alt="slider2"/>
+                        <img src="https://cmsimages.shoppersstop.com/Wedding_Ecom_Banner_Web_2544_X_740_Pxl_6d85c92d98/Wedding_Ecom_Banner_Web_2544_X_740_Pxl_6d85c92d98.jpg" className="w-100" alt="slider2"/>
                     </div>
                     <div className="item">
-                        <img src="https://cdn.shopclues.com/images/banners/2024/May/17/RefurbFeaturephone_Web_17thMay24.jpg" className="w-100" alt="slider3"/>
+                        <img src="https://cmsimages.shoppersstop.com/women_westernwear_main_banner_web_e6a67601f7/women_westernwear_main_banner_web_e6a67601f7.png" className="w-100" alt="slider3"/>
                     </div>
                     <div className="item">
-                        <img src="https://cdn.shopclues.com/images/banners/2024/May/17/RefurbFeaturephone_Web_17thMay24.jpg" className="w-100" alt="slider4"/>
+                        <img src="https://cmsimages.shoppersstop.com/Lancome_Carousel_2_Web_d99f9644cc/Lancome_Carousel_2_Web_d99f9644cc.jpg" className="w-100" alt="slider4"/>
                     </div>
                     <div className="item">
-                        <img src="https://cdn.shopclues.com/images/banners/2024/May/17/RefurbFeaturephone_Web_17thMay24.jpg" className="w-100" alt="slider5"/>
+                        <img src="https://cmsimages.shoppersstop.com/women_westernwear_main_banner_web_e6a67601f7/women_westernwear_main_banner_web_e6a67601f7.png" className="w-100" alt="slider5"/>
                     </div>
                 </Slider>
             </div>

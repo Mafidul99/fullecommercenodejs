@@ -5,9 +5,11 @@ import { FaAngleDown } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+import { FaAngleRight } from "react-icons/fa6";
+
 const Navigation =()=>{
 
-    const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(true);
+    const [isOpenSidebarVal, setIsOpenSidebarVal] = useState(false);
     return(
         <nav>
             <div className='container'>
@@ -22,8 +24,24 @@ const Navigation =()=>{
                                 </Button>
                                 <div className={`sidebarNav ${isOpenSidebarVal===true ? 'open' : ''}`}>
                                     <ul>
-                                        <li><Link to="/Home"><Button>Man</Button></Link></li>
-                                        <li><Link to="/Home"><Button>Woman</Button></Link></li>
+                                        <li><Link to="/Home"><Button>Man <FaAngleRight className='ml-auto'/></Button></Link>
+                                            <div className='submenu'>
+                                                <Link to="/Home"><Button>Cothing</Button></Link>
+                                                <Link to="/Home"><Button>footwear</Button></Link>
+                                                <Link to="/Home"><Button>watches</Button></Link>
+                                                <Link to="/Home"><Button>watches</Button></Link>
+                                                <Link to="/Home"><Button>watches</Button></Link>
+                                            </div>
+                                        </li>
+                                        <li><Link to="/Home"><Button>Woman <FaAngleRight className='ml-auto'/></Button></Link>
+                                            <div className='submenu'>
+                                                <Link to="/Home"><Button>Cothing</Button></Link>
+                                                <Link to="/Home"><Button>footwear</Button></Link>
+                                                <Link to="/Home"><Button>watches</Button></Link>
+                                                <Link to="/Home"><Button>watches</Button></Link>
+                                                <Link to="/Home"><Button>watches</Button></Link>
+                                            </div>
+                                        </li>
                                         <li><Link to="/Home"><Button>Beauty</Button></Link></li>
                                         <li><Link to="/Home"><Button>watch</Button></Link></li>
                                         <li><Link to="/Home"><Button>kids</Button></Link></li>
