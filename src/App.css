@@ -354,7 +354,7 @@ nav .navpart2 ul li:hover .submenu{
 .homeBannerSection{position: relative;}
 
 .homeBannerSection .swiper{overflow: inherit !important;}
-.homeBannerSection .swiper .item{overflow: hidden; border-radius: 10px;}
+.homeBannerSection .swiper .item{border-radius: 10px !important; }
 .homeBannerSection *{outline: none !important;}
 
 
@@ -362,11 +362,10 @@ nav .navpart2 ul li:hover .submenu{
   position: absolute;
   right: 3% !important;
   top: 50%; 
-  z-index: 1000; 
+  z-index: 100; 
   display: flex; 
   align-items: center !important; 
   justify-content: center !important;
-  text-align: center !important;
   width: 35px !important; 
   height: 35px !important;
   background: rgba(255, 255, 255, 0.8);
@@ -380,11 +379,10 @@ nav .navpart2 ul li:hover .submenu{
   position: absolute;
   left: 3% !important;
   top: 50%; 
-  z-index: 1000; 
+  z-index: 100; 
   display: flex; 
   align-items: center !important; 
   justify-content: center !important;
-  text-align: center !important;
   width: 35px !important; 
   height: 35px !important;
   background: rgba(255, 255, 255, 0.8);
@@ -400,7 +398,7 @@ nav .navpart2 ul li:hover .submenu{
 }
 
 
-.homeBannerSection .slick-arrow{
+/*.homeBannerSection .slick-arrow{
   position: absolute;
   top: 50%; 
   z-index: 100; 
@@ -433,7 +431,7 @@ nav .navpart2 ul li:hover .submenu{
 }
 
 .slick-next::before{content: "\f105" !important;}
-.slick-prev::before{content: "\f104" !important;}
+.slick-prev::before{content: "\f104" !important;}*/
 
 .homeBannerSection{  
   cursor: pointer;

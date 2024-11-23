@@ -1,7 +1,5 @@
 
 
-
-import Slider from "react-slick";
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -17,7 +15,7 @@ const HomeBanner = () => {
         <>
             <div className="container mt-3">
                 <div className="homeBannerSection">
-                    <div className="homeSliderRow">
+                    <div className="homeSliderRow align-items-center">
                         <Swiper
                             slidesPerView={1}
                             spaceBetween={15}
