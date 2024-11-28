@@ -263,6 +263,8 @@ outline: none !important;
     width: 100% !important;
 }
 
+button .loader{width: 25px !important; height: 25px !important;}
+
 
 
 /********sidebar************/
@@ -1043,8 +1045,10 @@ table td .info p{
 
 .btn-lg svg{
     font-size: 19px !important;
-    margin-right: 7px !important;
 }
+
+.topLoadingBar{height: 3px !important; background: #1866ee !important;}
+body.dark .topLoadingBar{background: #ff6179 !important;}
 
 .css-19opgx6-MuiFormControlLabel-root .MuiFormControlLabel-label{
     font-size: 14px !important;
@@ -1310,3 +1314,7 @@ body.dark .form .form-group textarea{
     border: 1px solid #253557 !important;
     color: rgba(255,255,255,0.8) !important;
 }
+
+.dot{display: block; width: 10px; height: 10px; border-radius: 100%;}
+
+.editmModalCat {width: 600px !important;}

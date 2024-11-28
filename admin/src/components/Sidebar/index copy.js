@@ -69,7 +69,46 @@ const Sidebar = () =>{
                     </ul>
                 </div>
             </li>
-            
+            <li>
+                <Link to="/">      
+                    <Button className={`w-100 ${activeTab === 3 ? 'active' : ''}`}
+                        onClick={()=>isOpenSubmenu(3)}>
+                        <span className="icon"><FaShoppingCart/></span>
+                            Orders
+                        <span className="arrow"><IoIosArrowForward/></span>
+                    </Button>
+                </Link>
+            </li>
+            <li> 
+                <Link to="/"> 
+                    <Button className={`w-100 ${activeTab === 4 ? 'active' : ''}`}
+                        onClick={()=>isOpenSubmenu(4)} >
+                        <span className="icon"><FaMessage/></span>
+                            Messages
+                        <span className="arrow"><IoIosArrowForward/></span>
+                    </Button>
+                </Link>
+            </li>
+            <li> 
+                <Link to="/"> 
+                    <Button className={`w-100 ${activeTab === 5 ? 'active' : ''}`}
+                    onClick={()=>isOpenSubmenu(5)}>
+                        <span className='icon'><FaBell/></span>
+                            Notifications
+                        <span className="arrow"><IoIosArrowForward/></span>
+                    </Button>
+                </Link>
+            </li>
+            <li> 
+                <Link to="/"> 
+                    <Button className={`w-100 ${activeTab === 6 ? 'active' : ''}`}
+                    onClick={()=>isOpenSubmenu(6)}>
+                        <span className="icon"><IoSettings/></span>
+                            Settings
+                        <span className="arrow"><IoIosArrowForward/></span>
+                    </Button>
+                </Link>
+            </li>
         </ul>
 
         <br/>
